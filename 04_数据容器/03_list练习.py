@@ -1,0 +1,10 @@
+ages = [21, 25, 21, 23, 22, 20]
+ages.append(31)
+ages.extend([29, 33, 30])
+print(f"追加完列表应该是：{ages}")
+first_age = ages.pop(0)
+last_age = ages.pop(-1)
+print(f"取出第一个元素是：{first_age}")
+print(f"取出最后一个元素是：{last_age}")
+index = ages.index(31)
+print(f"元素31的下标是：{index}")
