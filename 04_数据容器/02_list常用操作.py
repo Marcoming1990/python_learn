@@ -1,5 +1,5 @@
 mylist = ["wow", "pretty", "python"]
-# 1、查找某元素在列表内的下标索引
+# 1、index - 查找某元素在列表内的下标索引
 index = mylist.index("pretty")
 print(f"pretty在列表中的下标索引是：{index}")
 
@@ -7,15 +7,15 @@ print(f"pretty在列表中的下标索引是：{index}")
 mylist[0] = "哇"
 print(f"列表wow元素改为哇：{mylist}")
 
-# 3、在指定下标位置插入新元素
+# 3、insert - 在指定下标位置插入新元素
 mylist.insert(1, "best")
 print(f"列表第二个位置插入新元素best：{mylist}")
 
-# 4、在列表的尾部追加 单个 新元素
+# 4、append(附加) - 在列表的尾部追加 单个 新元素
 mylist.append("2022")
 print(f"列表最后追加单个新元素：{mylist}")
 
-# 5、在列表的尾部追加 一批 新元素
+# 5、extend(扩展) - 在列表的尾部追加 一批 新元素
 mylist2 = [1, 2, 3]
 mylist.extend(mylist2)
 print(f"列表最后追加一个新列表：{mylist}")
@@ -30,21 +30,21 @@ mylist = ["wow", "pretty", "python"]
 element = mylist.pop(2)
 print(f"通过pop方法取出元素后：{mylist},取出的元素是：{element}")
 
-# 7、删除某元素在列表中的第一个匹配项
+# 7、remove - 删除某元素在列表中的第一个匹配项
 mylist = ["wow", "pretty", "wow", "pretty", "python"]
 mylist.remove("pretty")
 print(f"通过remove方法移除元素后：{mylist}")
 
-# 8、清空列表
+# 8、clear- 清空列表
 mylist.clear()
 print(f"列表被清空了：{mylist}")
 
-# 9、统计列表内某元素的数量
+# 9、count - 统计列表内某元素的数量
 mylist = ["wow", "pretty", "wow", "pretty", "python"]
 count = mylist.count("pretty")
 print(f"列表中pretty的数量是：{count}")
 
-# 10、统计列表中全部的元素数量
+# 10、len - 统计列表中全部的元素数量
 mylist = ["wow", "pretty", "wow", "pretty", "python"]
 count = len(mylist)
 print(f"列表的元素数量总共：{count}个")

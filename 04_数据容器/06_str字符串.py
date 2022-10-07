@@ -21,7 +21,7 @@ my_str = "hello python hi world"
 my_str_list = my_str.split(" ")  # 通过空格分割
 print(f"字符串{my_str}空格分割后得到：{my_str_list},类型是{type(my_str_list)}")
 
-# strip方法1（规整，去除前后空格和回车）
+# strip方法1（规整，去除前后空格和回车\n）
 my_str = "   hello and hi   "
 new_my_str = my_str.strip()
 print(f"字符串{my_str}被strip后：{new_my_str}")
