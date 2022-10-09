@@ -13,10 +13,16 @@
         在注释中表示  # type: int
     不会报错：
         var_1: int = "hello"
+    形参注解：
+        def 函数名(形参:类型, 形参:类型...):
+    返回值注解：
+        def 函数名(形参:类型, 形参:类型...) -> 返回值类型:
+    Union(联合)类型注解：
+        Union[类型,...,类型]
 """
 import json
 import random
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Union
 
 # 基础数据类型注解
 var_1: int = 18
@@ -55,3 +61,29 @@ def func():
 
 # 返回值是int类型
 var_13 = func()  # type: int
+
+
+# 形参注解 def 函数名(形参:类型, 形参:类型...):
+def add(x: int, y: int):
+    return x + y
+
+
+# add()  # ctrl + p弹出提示
+
+
+# 返回值注解 def 函数名(形参:类型, 形参:类型...) -> 返回值类型:
+def func1(data: list) -> list:
+    return data
+
+
+# func1()
+
+# Union类型注解（必须先导包）
+my_list2: List[Union[int, str]] = [1, 2, "hello", "world"]  # list列表里面既有int类型，也有str类型
+
+
+def func2(data: Union[int, str]) -> Union[int, str]:
+    pass
+
+
+# func2()
